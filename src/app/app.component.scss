@@ -1,0 +1,40 @@
+.content {
+    padding-top: 60px; /* Adjust according to navbar height */
+    padding-bottom: 60px; /* Adjust according to footer height */
+    text-align: center;
+  }
+
+  .Estimate-btn {
+    background-color: green; /* Change to blue color */
+    display: block;
+    margin: 0 auto;
+    color: white; /* Text color */
+    padding: 10px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 12px; /* Font size */
+    margin-bottom: 20px;
+    cursor: pointer; /* Cursor style */
+  }
+
+h1 {
+    font-size: 48px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  h6 {
+    font-size: 28px;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 50px 0;
+  }
