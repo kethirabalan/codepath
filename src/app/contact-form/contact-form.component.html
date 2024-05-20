@@ -1,0 +1,73 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstName">First Name*:</label>
+      <input id="firstName" formControlName="firstName" />
+      <div *ngIf="contactForm.get('firstName')!.invalid && contactForm.get('firstName')!.touched">
+        First Name is required
+      </div>
+    </div>
+  
+    <div>
+      <label for="lastName">Last Name*:</label>
+      <input id="lastName" formControlName="lastName" />
+      <div *ngIf="contactForm.get('lastName')!.invalid && contactForm.get('lastName')!.touched">
+        Last Name is required
+      </div>
+    </div>
+  
+    <!-- <div>
+      <label for="email">Email*:</label>
+      <input id="email" formControlName="email" />
+      <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched">
+        <div *ngIf="contactForm.get('email')!.errors.required">
+          Email is required
+        </div>
+        <div *ngIf="contactForm.get('email')!.errors.email">
+          Invalid email address
+        </div>
+      </div>
+    </div> -->
+  
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input id="phoneNumber" formControlName="phoneNumber" />
+    </div>
+  
+    <div>
+      <label for="companyName">Company Name:</label>
+      <input id="companyName" formControlName="companyName" />
+    </div>
+  
+    <div>
+      <label for="howDidYouHear">How did you hear about us?*:</label>
+      <input id="howDidYouHear" formControlName="howDidYouHear" />
+      <div *ngIf="contactForm.get('howDidYouHear')!.invalid && contactForm.get('howDidYouHear')!.touched">
+        This field is required
+      </div>
+    </div>
+  
+    <div>
+      <label for="projectDetails">Tell us more about your project*:</label>
+      <textarea id="projectDetails" formControlName="projectDetails"></textarea>
+      <div *ngIf="contactForm.get('projectDetails')!.invalid && contactForm.get('projectDetails')!.touched">
+        This field is required
+      </div>
+    </div>
+  
+    <div>
+      <label>Do you need an NDA first?*:</label>
+      <div>
+        <input type="radio" id="ndaYes" formControlName="needNDA" value="Yes" />
+        <label for="ndaYes">Yes</label>
+      </div>
+      <div>
+        <input type="radio" id="ndaNo" formControlName="needNDA" value="No" />
+        <label for="ndaNo">No</label>
+      </div>
+      <div *ngIf="contactForm.get('needNDA')!.invalid && contactForm.get('needNDA')!.touched">
+        Please select an option
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+  </form>

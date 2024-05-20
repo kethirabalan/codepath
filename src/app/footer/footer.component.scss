@@ -1,4 +1,4 @@
-footer {
+.footer {
     width: 100%;
     background-color: #ffffff;
     color: white;
@@ -20,7 +20,7 @@ footer {
   
       .footer-nav {
         list-style: none;
-        padding-left: 575px;
+        justify-content: center;
         display: flex;
         font-size: smaller;
         gap: 0px;
@@ -40,25 +40,26 @@ footer {
       margin-top: 10px;
       font-size: 0.9em;
       color: black;
+      justify-content: center;
+      padding-left: 30px;
     }
   }
-  .footer-logo {
-    height: 40px; 
-    margin-left: 60px;
-  }  
 
   .footer-social {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 35px;
-    padding-left: 550px;
+    padding-left: 15px;
+    width: 100%;
 
     .social-icon {
-      color: black;
-      font-size: 1.2em;
-      transition: color 0.3s;
+        color: black;
+        font-size: 1.2em;
+        transition: color 0.3s;
 
-      &:hover {
-        color: #ff4081;
-      }
+        &:hover {
+            color: #ff4081;
+        }
     }
-  }
+}
