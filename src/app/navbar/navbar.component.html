@@ -1,18 +1,34 @@
-<nav [ngClass]="{ 'navbar-fixed': isNavbarFixed }">
-    <div class="navbar-container">
-        <img src="./assets/logo.png" alt="CodePath Logo" class="navbar-logo" routerLink="/home">
-        <div>      
-            <ul class="navbar-nav">
-              <li class="nav-item"><a href="#">Services</a></li>
-              <li class="nav-item"><a href="#">Industries</a></li>
-              <li class="nav-item"><a href="#">Clients</a></li>
-              <li class="nav-item"><a href="#">About us</a></li>
-              <li class="nav-item"><a href="#">Careers</a></li>
-            </ul>
-            </div>
-            <div>
-              <li class="nav-estimate"><button class="Estimate" routerLink="/estimate">Estimate project</button></li>
-            </div>          
-        </div>
-  </nav>
-  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home">
+      <img src="./assets/logo.png" alt="CodePath Logo" class="mx-6" style="height: 40px;">
+    </a>
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse offcanvas-collapse" [ngClass]="{'open': isNavbarOpen}" id="navbarNav">
+      <button type="button" class="btn-close btn-close-dark position-absolute top-1 end-0 mt-3 me-3 d-block d-lg-none"
+      aria-label="Close" (click)="toggleNavbar()"></button>
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Industries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-success" href="/estimate">Estimate Project</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

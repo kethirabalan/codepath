@@ -1,85 +1,120 @@
-nav {
-    width: 100%;
-    background-color: #ffffff;
-    color: white;
-    position: relative;
-    z-index: 1000;
-      
-    .navbar-container {
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      padding: 0 0px;
-  
-      .navbar-brand {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
+.navbar-nav {
+  margin: auto;
+  align-items: center;
+  gap: 40px;
+}
 
-      .nav-estimate {
-        padding-top: 10px;
-      }
-  
-      .navbar-nav {
-        list-style: none;
-        display: flex;
-        padding-top: 10px;
-        gap: 30px;
-  
-        .nav-item {
-          a {
-            color: black;
-            text-decoration: none;
-            padding: 5px 10px;
-            transition: background-color 0.3s;  
-  
-            &:hover {
-              background-color: rgba(255, 255, 255, 0.1);
-              border-radius: 4px;
-            }
-          }
-        }
-      }
-    }
-  
-    &.navbar-fixed {
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
+.arrow-icon {
+  margin-right: 0.5rem; /* Adjust as needed */
+  content: url('data:image/svg+xml;base64,...'); /* Your SVG icon base64 encoded */
+}
+
+@media (max-width: 600px) {
+  .offcanvas-collapse {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  background-color: var(--bs-light);
+  transition: transform 0.3s ease-in-out;
+}
+.offcanvas-collapse.open {
+  transform: translateX(-100%);
+
+  .navbar-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    z-index: 1050; /* Ensure it's above the backdrop */
   }
+}
+}
+
+// // nav {
+// //     width: 100%;
+// //     background-color: #ffffff;
+// //     color: white;
+// //     position: relative;
+// //     z-index: 1000;
+      
+// //     .navbar-containers {
+// //       display: flex;
+// //       justify-content:center;
+// //       align-items: center;
+// //       padding: 0 0px;
   
-  .navbar-logo {
-    height: 40px; 
-    margin-left: 60px;
+// //       .navbar-brand {
+// //         font-size: 1.5em;
+// //         font-weight: bold;
+// //       }
+
+// //       .nav-estimate {
+// //         padding-top: 10px;
+// //       }
+  
+// //       .navbar-nav1 {
+// //         list-style: none;
+// //         display: flex;
+// //         padding-top: 10px;
+// //         margin-right: 105px;
+// //         gap: 25px;
+  
+// //         .nav-item {
+// //           a {
+// //             color: black;
+// //             text-decoration: none;
+// //             padding: 5px 10px;
+// //             transition: background-color 0.3s;  
+  
+// //             &:hover {
+// //               background-color: rgba(74, 174, 13, 0.1);
+// //               border-radius: 4px;
+// //             }
+// //           }
+// //         }
+// //       }
+// //     }
+  
+// //     &.navbar-fixed {
+// //       position: fixed;
+// //       top: 0;
+// //       left: 0;
+// //     }
+// //   }
+  
+// //   .navbar-logo {
+// //     height: 40px; 
+// //     margin-left: 60px;
+// //     margin-right: 95px;
 
     
-  }
+// //   }
 
-  .Estimate {
-    color: #000000; // Button text color
-    background-color: rgb(252, 225, 231); // Button background color
-    font-size: 14px; // Font size of the button text
-    cursor: pointer; // Cursor changes to pointer on hover
-    border-radius: 5px; // No rounded corners for box shape
-    padding: 5px; // Padding inside the button
-    border: 2px solid #ffffff; // Optional: Border around the button
-    text-align: center; // Center align the text
-    display: inline-block; // Inline block to apply padding and center text
-    transition: background-color 0.3s ease; // Smooth transition for background color changes
+//   .Estimate {
+//     color: #000000; // Button text color
+//     background-color: rgb(252, 225, 231); // Button background color
+//     font-size: 14px; // Font size of the button text
+//     cursor: pointer; // Cursor changes to pointer on hover
+//     border-radius: 5px; // No rounded corners for box shape
+//     padding: 5px; // Padding inside the button
+//     border: 2px solid #ffffff; // Optional: Border around the button
+//     text-align: center; // Center align the text
+//     display: inline-block; // Inline block to apply padding and center text
+//     transition: background-color 0.3s ease; // Smooth transition for background color changes
+//     margin-left: 45px;
 
-    &:hover {
-        background-color: #f8d7da; // Background color on hover
-    }
+//     &:hover {
+//         background-color: #f8d7da; // Background color on hover
+//     }
 
-    &:focus {
-        outline: none; // Remove default focus outline
-        box-shadow: 0 0 0 3px rgba(252, 225, 231, 0.5); // Custom focus outline
-    }
-}
+//     &:focus {
+//         outline: none; // Remove default focus outline
+//         box-shadow: 0 0 0 3px rgba(252, 225, 231, 0.5); // Custom focus outline
+//     }
+// }
 
-
-.sign-in-button:hover {
-    background-color: #0056b3; /* Darken background color on hover */
-}
-  
