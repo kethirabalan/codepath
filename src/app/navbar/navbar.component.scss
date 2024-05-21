@@ -1,13 +1,10 @@
 .navbar-nav {
-  margin: auto;
+  // margin: auto;
   align-items: center;
   gap: 40px;
 }
 
-.arrow-icon {
-  margin-right: 0.5rem; /* Adjust as needed */
-  content: url('data:image/svg+xml;base64,...'); /* Your SVG icon base64 encoded */
-}
+
 
 @media (max-width: 600px) {
   .offcanvas-collapse {
