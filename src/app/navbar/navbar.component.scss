@@ -5,6 +5,11 @@
   // padding-left: 10px;
 }
 
+.nav-logo {
+  margin-right: 25px;
+}
+
+
 .Estimate-btn {
   background-color: #c9f6c8;
   display: block;
@@ -15,6 +20,7 @@
   border-radius: 5px; /* Rounded corners */
   font-size: 12px; /* Font size */
   cursor: pointer; /* Cursor style */
+  margin-left: 20px;
 }
 
 .Estimate-btn:hover {

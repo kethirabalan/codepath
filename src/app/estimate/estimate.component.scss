@@ -27,9 +27,19 @@ div {
     // text-align: center;
   }
 
+  .content {
+    margin-left: 20px;
+  }
+
   .text {
     text-align: start;
     // margin-top: 50px;
+  }
+
+@media (min-width: 768px) {
+    .content {
+      margin-left: 40px;
+    }
   }
 
   // .row {
