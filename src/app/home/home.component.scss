@@ -32,15 +32,15 @@
 
 /* General Styles */
 .content {
-  padding-top: 170px;
+  padding-top: 70px;
   /* Adjust according to navbar height */
   padding-bottom: 60px;
   /* Adjust according to footer height */
   text-align: center;
 }
 
-.Estimate-btn {
-  background-color: rgb(116, 236, 116);
+.Main-btn {
+  background-color: #00D563;
   /* Change to blue color if needed */
   display: block;
   margin: 0 auto;
@@ -59,6 +59,11 @@
   /* Cursor style */
 }
 
+.para2 {
+  // width: 700px;
+  text-align: center;
+}
+
 h1 {
   font-size: 48px;
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
@@ -73,11 +78,21 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 30px;
   flex-direction: column;
   text-align: center;
 }
+
 
 .container1 {
   display: flex;
@@ -103,6 +118,7 @@ ul li {
   background-color: #d5e9ec5d;
   padding-top: 80px;
   padding-bottom: 50px;
+  padding: 20px;
 }
 
 .secend-template {
@@ -160,6 +176,12 @@ ul li {
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
+
+    .row {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 3.5);
+      margin-top: var(--bs-gutter-y);
+    }
   }
 }
 
@@ -174,5 +196,10 @@ ul li {
 
   .img1 {
     width: 260px;
+  }
+  .para2 {
+    width: auto;
+    text-align: start;
+    margin-left: 10px;
   }
 }

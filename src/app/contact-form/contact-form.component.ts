@@ -13,6 +13,9 @@ export class ContactFormComponent {
 
   constructor(private fb: FormBuilder) {}
   contactForm!: FormGroup;
+  formSubmitted = false;
+  
+  
   ngOnInit() {
     this.contactForm = this.fb.group({
       firstName: ['', Validators.required],
@@ -27,10 +30,9 @@ export class ContactFormComponent {
   }
 
   onSubmit() {
+    this.formSubmitted = true;
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-    } else {
-      console.log('Form is invalid');
+      console.log('Form submitted', this.contactForm.value);
     }
   }
 }

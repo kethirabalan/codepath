@@ -1,73 +1,49 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form">
+    <b>
     <div>
-      <label for="firstName">First Name*:</label>
-      <input id="firstName" formControlName="firstName" />
-      <div *ngIf="contactForm.get('firstName')!.invalid && contactForm.get('firstName')!.touched">
-        First Name is required
-      </div>
+      <label for="firstName">First Name*</label><br>
+      <input id="firstName" style="width: 255px;" formControlName="firstName" />
     </div>
-  
+
     <div>
-      <label for="lastName">Last Name*:</label>
-      <input id="lastName" formControlName="lastName" />
-      <div *ngIf="contactForm.get('lastName')!.invalid && contactForm.get('lastName')!.touched">
-        Last Name is required
-      </div>
+      <label for="lastName">Last Name*</label><br>
+      <input id="lastName" style="width: 255px;" formControlName="lastName" />
     </div>
-  
+
     <div>
-      <label for="email">Email*:</label>
-      <input id="email" formControlName="email" />
-      <div *ngIf="contactForm.get('email')!.invalid && contactForm.get('email')!.touched">
-        <!-- <div *ngIf="contactForm.get('email').errors.required">
-          Email is required
+      <label for="email">Email*</label><br>
+      <input id="email" style="width: 255px;" formControlName="email" />
+    </div>
+
+    <div>
+      <label for="phoneNumber">Phone Number</label><br>
+      <input id="phoneNumber" style="width: 255px;" formControlName="phoneNumber" />
+    </div>
+
+    <div>
+      <label for="companyName">Company Name</label><br>
+      <input id="companyName" style="width: 255px;" formControlName="companyName" />
+    </div>
+
+    <div>
+      <label for="howDidYouHear">How did you hear about us?*</label><br>
+      <input id="howDidYouHear" style="width: 255px;" formControlName="howDidYouHear" />
+    </div>
+
+    <div>
+      <label for="projectDetails">Tell us more about your project*</label><br>
+      <textarea id="projectDetails" style="width: 255px;" formControlName="projectDetails"></textarea>
+    </div>
+  </b>
+        <div *ngIf="formSubmitted && contactForm.invalid" style="color: red;">
+          Please complete all required fields.
         </div>
-        <div *ngIf="contactForm.get('email').errors.email">
-          Invalid email address
-        </div> -->
-      </div>
-    </div>
-  
-    <div>
-      <label for="phoneNumber">Phone Number:</label>
-      <input id="phoneNumber" formControlName="phoneNumber" />
-    </div>
-  
-    <div>
-      <label for="companyName">Company Name:</label>
-      <input id="companyName" formControlName="companyName" />
-    </div>
-  
-    <div>
-      <label for="howDidYouHear">How did you hear about us?*:</label>
-      <input id="howDidYouHear" formControlName="howDidYouHear" />
-      <div *ngIf="contactForm.get('howDidYouHear')!.invalid && contactForm.get('howDidYouHear')!.touched">
-        This field is required
-      </div>
-    </div>
-  
-    <div>
-      <label for="projectDetails">Tell us more about your project*:</label>
-      <textarea id="projectDetails" formControlName="projectDetails"></textarea>
-      <div *ngIf="contactForm.get('projectDetails')!.invalid && contactForm.get('projectDetails')!.touched">
-        This field is required
-      </div>
-    </div>
-  
-    <div>
-      <label>Do you need an NDA first?*:</label>
-      <div>
-        <input type="radio" id="ndaYes" formControlName="needNDA" value="Yes" />
-        <label for="ndaYes">Yes</label>
-      </div>
-      <div>
-        <input type="radio" id="ndaNo" formControlName="needNDA" value="No" />
-        <label for="ndaNo">No</label>
-      </div>
-      <div *ngIf="contactForm.get('needNDA')!.invalid && contactForm.get('needNDA')!.touched">
-        Please select an option
-      </div>
-    </div>
-  
-    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
-  </form>
+      <form action="#" method="post">
+        <label for="marketingConsent" style="font-size: 12px;">
+            <input type="checkbox" id="marketingConsent" name="marketingConsent">
+            I agree to receive marketing communication <br> from codepath.
+        </label>
+      <button class="Estimate-btn" type="submit">Request Free Estimate</button>
+      <label style="margin-left: 35px;">Please complete all required fields.</label>
+</form>

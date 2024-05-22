@@ -1,35 +1,57 @@
 .navbar-nav {
-  // margin: auto;
+  margin: auto;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
+  // padding-left: 10px;
+}
+
+.Estimate-btn {
+  background-color: #c9f6c8;
+  display: block;
+  margin: 20px auto; /* Combine top and bottom margins */
+  color: black; /* Text color */
+  padding: 10px; /* Padding for button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 12px; /* Font size */
+  cursor: pointer; /* Cursor style */
+}
+
+.Estimate-btn:hover {
+  background-color: #00D563; /* Change background color on hover */
+}
+
+
+.navbar-brand {
+  // padding-left: 510px;
+  align-items: center;
 }
 
 
 
 @media (max-width: 600px) {
-  .offcanvas-collapse {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 100%;
-  width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  overflow-y: auto;
-  background-color: var(--bs-light);
-  transition: transform 0.3s ease-in-out;
-}
-.offcanvas-collapse.open {
-  transform: translateX(-100%);
+  
+.navbar-nav {
+  align-items: start;
+  gap: 10px;
+  margin: 0px;
+  margin-top: 25px;
 
-  .navbar-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    z-index: 1050; /* Ensure it's above the backdrop */
-  }
 }
+
+.navbar-brand {
+  padding-left: 0px;
+  align-items: center;
+}
+
+.Estimate-btn {
+  margin-left: 120px;
+  background-color: #00D563;
+}
+.nav-logo {
+  display: none;
+}
+
 }
 
 // // nav {

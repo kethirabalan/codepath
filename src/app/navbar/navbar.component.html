@@ -1,15 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" style="margin-left: 325px;" href="/home">
-      <img src="./assets/logo.png" alt="CodePath Logo" class="mx-6 d-block" style="height: 40px;">
+    <a class="navbar-brand" href="/home">
+      <img src="./assets/logo.png" alt="CodePath Logo" class="mx-6 d-block d-lg-none" style="height: 40px;">
     </a>
-    <button class="navbar-toggler" type="button" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse offcanvas-collapse" [ngClass]="{'open': isNavbarOpen}" id="navbarNav">
-      <button type="button" class="btn-close btn-close-dark position-absolute top-1 end-0 mt-3 me-3 d-block d-lg-none"
-      aria-label="Close" (click)="toggleNavbar()"></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
+        <li>
+          <a class="nav-logo" href="/home">
+            <img src="./assets/logo.png" alt="CodePath Logo" class="mx-6" style="height: 40px;">
+          </a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Services</a>
         </li>
@@ -26,7 +30,7 @@
           <a class="nav-link" href="#">Careers</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-success" href="/estimate">Estimate Project</a>
+          <button class="Estimate-btn" routerLink="./estimate">Estimate Project</button>
         </li>
       </ul>
     </div>

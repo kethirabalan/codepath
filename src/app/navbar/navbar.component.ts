@@ -12,9 +12,4 @@ import { bootstrapApplication } from '@angular/platform-browser';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  isNavbarOpen = false;
-
-  toggleNavbar() {
-    this.isNavbarOpen = !this.isNavbarOpen;
-  }
 }
