@@ -1,51 +1,42 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="form">
-    <b>
-      <div>
-        <label for="firstName">First Name*</label><br>
-        <input id="firstName" style="width: 255px;" formControlName="firstName" />
-      </div>
-
-      <div>
-        <label for="lastName">Last Name*</label><br>
-        <input id="lastName" style="width: 255px;" formControlName="lastName" />
-      </div>
-
-      <div>
-        <label for="email">Email*</label><br>
-        <input id="email" style="width: 255px;" formControlName="email" />
-      </div>
-
-      <div>
-        <label for="phoneNumber">Phone Number</label><br>
-        <input id="phoneNumber" style="width: 255px;" formControlName="phoneNumber" />
-      </div>
-
-      <div>
-        <label for="companyName">Company Name</label><br>
-        <input id="companyName" style="width: 255px;" formControlName="companyName" />
-      </div>
-
-      <div>
-        <label for="howDidYouHear">How did you hear about us?*</label><br>
-        <input id="howDidYouHear" style="width: 255px;" formControlName="howDidYouHear" />
-      </div>
-
-      <div>
-        <label for="projectDetails">Tell us more about your project*</label><br>
-        <textarea id="projectDetails" style="width: 255px;" formControlName="projectDetails"></textarea>
-      </div>
-    </b>
+    <div class="form-group">
+      <label for="firstName">First Name*</label><br>
+      <input id="firstName" class="form-control" formControlName="firstName" />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name*</label><br>
+      <input id="lastName" class="form-control" formControlName="lastName" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email*</label><br>
+      <input id="email" class="form-control" formControlName="email" />
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">Phone Number</label><br>
+      <input id="phoneNumber" class="form-control" formControlName="phoneNumber" />
+    </div>
+    <div class="form-group">
+      <label for="companyName">Company Name</label><br>
+      <input id="companyName" class="form-control" formControlName="companyName" />
+    </div>
+    <div class="form-group">
+      <label for="howDidYouHear">How did you hear about us?*</label><br>
+      <input id="howDidYouHear" class="form-control" formControlName="howDidYouHear" />
+    </div>
+    <div class="form-group">
+      <label for="projectDetails">Tell us more about your project*</label><br>
+      <textarea id="projectDetails" class="form-control" formControlName="projectDetails"></textarea>
+    </div>
     <div *ngIf="formSubmitted && contactForm.invalid" style="color: red;">
       Please complete all required fields.
     </div>
-    <form action="#" method="post">
+    <div class="form-group">
       <label for="marketingConsent" style="font-size: 12px;">
-        <input type="checkbox" id="marketingConsent" name="marketingConsent">
-        I agree to receive marketing communication <br> from codepath.
+        <input type="checkbox" class="form-check-input" id="marketingConsent" formControlName="marketingConsent">
+        I agree to receive marketing communication from codepath.
       </label>
-      <button class="Estimate-btn" type="submit">Request Free Estimate</button>
-      <div>
-      <label style="margin-left: 60px; font-size: 9px;">Please complete all required fields.</label>
     </div>
-    </form>
+    <button class="Estimate-btn" type="submit">Request Free Estimate</button>
+  </div>
+</form>
