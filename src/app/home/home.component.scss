@@ -103,8 +103,9 @@ h1 {
 
 .card {
   display: block;
-  border-radius: 50px 50px;
-  border-color: #feb47b;
+  border: none;
+  // border-radius: 50px 50px;
+  // border-color: #feb47b;
 }
 
 ul {
@@ -183,11 +184,6 @@ ul li {
     grid-template-columns: 1fr;
     padding: 20px;
     width: 100%;
-  }
-
-  .card {
-    display: block;
-    border: none;
   }
 
   .img1 {
