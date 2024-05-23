@@ -5,141 +5,52 @@
   // padding-left: 10px;
 }
 
-.nav-logo {
-  margin-right: 25px;
-}
-
-
 .Estimate-btn {
   background-color: #c9f6c8;
   display: block;
-  margin: 20px auto; /* Combine top and bottom margins */
-  color: black; /* Text color */
-  padding: 10px; /* Padding for button */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 12px; /* Font size */
-  cursor: pointer; /* Cursor style */
+  margin: 20px auto;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 .Estimate-btn:hover {
-  background-color: #00D563; /* Change background color on hover */
+  background-color: #00D563;
 }
 
 
-.navbar-brand {
-  // padding-left: 510px;
-  align-items: center;
+.logo {
+  height: 40px;
 }
-
 
 
 @media (max-width: 600px) {
-  
-.navbar-nav {
-  align-items: start;
-  gap: 10px;
-  margin: 0px;
-  margin-top: 25px;
+
+  .navbar-nav {
+    align-items: start;
+    gap: 10px;
+    margin: 0px;
+    margin-top: 25px;
+
+  }
+
+  .navbar-brand {
+    padding-left: 0px;
+    align-items: center;
+  }
+
+  .Estimate-btn {
+    margin-left: 120px;
+    background-color: #00D563;
+  }
+
+  .nav-logo {
+    display: none;
+  }
 
 }
-
-.navbar-brand {
-  padding-left: 0px;
-  align-items: center;
-}
-
-.Estimate-btn {
-  margin-left: 120px;
-  background-color: #00D563;
-}
-.nav-logo {
-  display: none;
-}
-
-}
-
-// // nav {
-// //     width: 100%;
-// //     background-color: #ffffff;
-// //     color: white;
-// //     position: relative;
-// //     z-index: 1000;
-      
-// //     .navbar-containers {
-// //       display: flex;
-// //       justify-content:center;
-// //       align-items: center;
-// //       padding: 0 0px;
-  
-// //       .navbar-brand {
-// //         font-size: 1.5em;
-// //         font-weight: bold;
-// //       }
-
-// //       .nav-estimate {
-// //         padding-top: 10px;
-// //       }
-  
-// //       .navbar-nav1 {
-// //         list-style: none;
-// //         display: flex;
-// //         padding-top: 10px;
-// //         margin-right: 105px;
-// //         gap: 25px;
-  
-// //         .nav-item {
-// //           a {
-// //             color: black;
-// //             text-decoration: none;
-// //             padding: 5px 10px;
-// //             transition: background-color 0.3s;  
-  
-// //             &:hover {
-// //               background-color: rgba(74, 174, 13, 0.1);
-// //               border-radius: 4px;
-// //             }
-// //           }
-// //         }
-// //       }
-// //     }
-  
-// //     &.navbar-fixed {
-// //       position: fixed;
-// //       top: 0;
-// //       left: 0;
-// //     }
-// //   }
-  
-// //   .navbar-logo {
-// //     height: 40px; 
-// //     margin-left: 60px;
-// //     margin-right: 95px;
-
-    
-// //   }
-
-//   .Estimate {
-//     color: #000000; // Button text color
-//     background-color: rgb(252, 225, 231); // Button background color
-//     font-size: 14px; // Font size of the button text
-//     cursor: pointer; // Cursor changes to pointer on hover
-//     border-radius: 5px; // No rounded corners for box shape
-//     padding: 5px; // Padding inside the button
-//     border: 2px solid #ffffff; // Optional: Border around the button
-//     text-align: center; // Center align the text
-//     display: inline-block; // Inline block to apply padding and center text
-//     transition: background-color 0.3s ease; // Smooth transition for background color changes
-//     margin-left: 45px;
-
-//     &:hover {
-//         background-color: #f8d7da; // Background color on hover
-//     }
-
-//     &:focus {
-//         outline: none; // Remove default focus outline
-//         box-shadow: 0 0 0 3px rgba(252, 225, 231, 0.5); // Custom focus outline
-//     }
-// }
-

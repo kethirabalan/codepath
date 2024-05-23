@@ -65,7 +65,7 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,6 +99,12 @@ h1 {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+}
+
+.card {
+  display: block;
+  border-radius: 50px 50px;
+  border-color: #feb47b;
 }
 
 ul {
@@ -153,6 +159,10 @@ ul li {
   transform: scale(1.2);
 }
 
+.list {
+  text-align: start;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .container {
@@ -173,6 +183,11 @@ ul li {
     grid-template-columns: 1fr;
     padding: 20px;
     width: 100%;
+  }
+
+  .card {
+    display: block;
+    border: none;
   }
 
   .img1 {
