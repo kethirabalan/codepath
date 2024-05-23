@@ -30,6 +30,31 @@
   font-style: italic;
 }
 
+.video-background {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+
+.rich-text {
+  color: white;
+}
+
 /* General Styles */
 .content {
   padding-top: 70px;
